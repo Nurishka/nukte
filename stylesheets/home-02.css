@@ -1,5 +1,5 @@
 .intro-bg{
-    background: url('images/bgPhoto.png') no-repeat center center; 
+    background: url('src="images/bgPhoto.png') no-repeat center center; 
     background-size: cover;
 }
 .ticker-container .ticker-emblem{
