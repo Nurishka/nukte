@@ -1,9 +1,9 @@
 .intro-bg{
-    background: url('/images/bgPhoto.png') no-repeat center center; 
+    background: url('../images/iphoneNewVer.png') no-repeat center center; 
     background-size: cover;
 }
 .ticker-container .ticker-emblem{
-	margin-bottom: 20px;
+	margin-bottom: 100px;
 }
 .ticker-container h2{
 	font-family: "Montserrat",sans-serif;
@@ -11,6 +11,6 @@
     font-weight: 300;
     letter-spacing: 8px;
     line-height: 41px;
-    padding: 7px 7px 7px 15px;
+    padding: 60px 7px 7px 15px;
     text-transform: uppercase;
 }
