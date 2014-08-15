@@ -1,13 +1,13 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" ); //UPDATE THIS TO YOUR NAME
-define( "RECIPIENT_EMAIL", "john@example.com" ); //UPDATE THIS TO YOUR EMAIL ID
-define( "EMAIL_SUBJECT", "Website Visitor Message" ); //UPDATE THIS TO YOUR SUBJECT
+define( "RECIPIENT_NAME", "Nurym Kudaibergen" ); //UPDATE THIS TO YOUR NAME
+define( "RECIPIENT_EMAIL", "nurim98@gmail.com" ); //UPDATE THIS TO YOUR EMAIL ID
+define( "EMAIL_SUBJECT", "Email of a person for nukte updates" ); //UPDATE THIS TO YOUR SUBJECT
 
 // Read the form values
 $success = false;
-$senderName = "ppl email";
+$senderName = "Person for updates";
 $senderEmail = "nurim98@gmail.com";
 $original_message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 $message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$original_message;
@@ -23,11 +23,6 @@ if ( $senderName && $senderEmail && $message ) {
 
 if ( $success )
 {
-?>
-	<script>
-		window.location='index.html';
-	</script>
-<?php
 }
 else
 {
