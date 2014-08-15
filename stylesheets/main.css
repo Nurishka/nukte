@@ -413,6 +413,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn-reflex-dark{
+    margin-left: 45%;
     border:solid 1px #4c4c4c;
     background: transparent;
     color: #4c4c4c;
@@ -1181,12 +1182,13 @@ textarea {
     margin-top: 0;
     padding: 10px !important;
     resize: none;
-    width: 100%;
+    width: 50%;
     -webkit-transition: all .8s linear;
        -moz-transition: all .8s linear;
         -ms-transition: all .8s linear;
          -o-transition: all .8s linear;
             transition: all .8s linear;
+    text-align: center;
 }
 input.send_message {
     background: none repeat scroll 0 0 #EF4A4A;

@@ -7,8 +7,8 @@ define( "EMAIL_SUBJECT", "Website Visitor Message" ); //UPDATE THIS TO YOUR SUBJ
 
 // Read the form values
 $success = false;
-$senderName = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
-$senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
+$senderName = "ppl email";
+$senderEmail = "nurim98@gmail.com";
 $original_message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 $message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$original_message;
 
@@ -25,7 +25,7 @@ if ( $success )
 {
 ?>
 	<script>
-		window.location='thanks.html';
+		window.location='index.html';
 	</script>
 <?php
 }
