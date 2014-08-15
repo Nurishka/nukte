@@ -23,6 +23,7 @@ if ( $senderName && $senderEmail && $message ) {
 
 if ( $success )
 {
+	echo "ugkjlkj;lj;k;lk;";
 }
 else
 {
