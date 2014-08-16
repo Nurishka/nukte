@@ -14,11 +14,20 @@ $message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$or
 
 // If all values exist, send the email
 if ( $senderName && $senderEmail && $message ) {
-  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $senderName . " <" . $senderEmail . ">\n";
-  $headers .= "MIME-Version: 1.0\n"; 
-  $headers .= "Content-Type: text/HTML; charset=ISO-8859-1\n";
-  $success = mail( $recipient, EMAIL_SUBJECT, $message, $headers );
+	// Open the text file
+	$f = fopen("textfile.txt", "w");
+
+	// Write text line
+	fwrite($f, $original_message); 
+
+	// Close the text file
+	fclose($f);
+
+	// Open file for reading, and read the line
+	$f = fopen("textfile.txt", "r");
+	echo fgets($f); 
+
+	fclose($f);
 }
 
 if ( $success )
